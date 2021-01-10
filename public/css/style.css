@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+input,
+textarea {
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #a36721;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #49290f;
+}
+
+.navbar-toggler {
+    padding: 0;
+}
+
+.home {
+    position: relative;
+}
+
+.home img {
+    position: absolute;
+    margin-top: -50px;
+    z-index: -1;
+    right: -10px;
+}
+
+.home div {
+    position: absolute;
+    background-color: #a36721;
+    color: white;
+    width: 400px;
+    margin-top: 10%;
+    padding: 20px;
+}
+
+/* index page */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 97.5%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+/* slidshow */
+.carousel-control-next-icon:hover, .carousel-control-prev-icon:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-indicators>li {
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: lightgrey;
+}
+
+.carousel {
+    height: 650px;
+}
+
+.carousel-item,
+.carousel-inner,
+.carousel-inner img {
+    height: 100%;
+    width: 100%;
+}
+
+.text-block-right {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px 20px;
+}
+
+.btn-inf {
+    bottom: 20px;
+    right: 20px;
+    position: fixed;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 14px 14px;
+    font-size: 16px;
+    display: inline-block;
+    z-index: 1;
+}
+
+.btn:hover {
+    border: 0px;
+    background: #eee;
+}
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#text {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    font-size: 17px;
+    color: white;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+/* contact page */
+.section {
+    width: 100%;
+    padding: 2rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section .form {
+    width: 100%;
+    max-width: 420px;
+    overflow: hidden;
+}
+
+.title {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1;
+    margin-bottom: 0.7rem;
+}
+
+.contact-info {
+    padding: 2.3rem 2.2rem;
+    position: relative;
+}
+
+.contact-info .title {
+    color: #a36721;
+}
+
+.text {
+    color: #333;
+    margin: 1.5rem 0 2rem 0;
+}
+
+.information {
+    display: flex;
+    color: #555;
+    margin: 0.7rem 0;
+    align-items: center;
+    font-size: 0.95rem;
+}
+
+.icon {
+    color: #a36721;
+    width: 28px;
+    margin-right: 0.7rem;
+}
+
+.social-media {
+    padding: 2rem 0 0 0;
+}
+
+.social-media p {
+    color: #333;
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 0.5rem;
+}
+
+.social-icons a {
+    width: 35px;
+    height: 35px;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #b6864e, #a36721);
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 0.5rem;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 850px) {
+    .text {
+        margin: 1rem 0 1.5rem 0;
+    }
+
+    .social-media {
+        padding: 1.5rem 0 0 0;
+    }
+
+    .home img {}
+
+    .home div {}
+
+    .home div h1 {
+        font-size: 20px;
+    }
+
+    .home div p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding: 1.5rem;
+    }
+
+    .contact-info:before {
+        display: none;
+    }
+
+    .social-icons a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .icon {
+        width: 23px;
+    }
+
+    .home div {
+        background-color: rgba(163, 103, 33, 0.5);
+        position: relative;
+        align-items: center;
+    }
+}
